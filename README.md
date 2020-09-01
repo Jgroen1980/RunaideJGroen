@@ -8,7 +8,7 @@ hardloop coaching applicatie: Runaide
 
 Als u de applicatie nog niet tot uw beschikking heeft kunt u deze verkrijgen vie de volgende link:
 ```bash
-https://github.com/hogeschoolnovi/eindopdracht-jaap-groen.git
+https://github.com/Jgroen1980/RunaideJGroen
 ```
 <br/>
 
