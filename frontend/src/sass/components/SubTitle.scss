@@ -1,0 +1,12 @@
+@import "src/sass/_Variables";
+
+.subtitle {
+  .subtitle-text {
+    font-family: "Avenir Next";
+    font-weight: 600;
+    font-size: 20px;
+    color: $primary;
+    margin: 0;
+    padding: 20px 0px 20px 0px;
+  }
+}

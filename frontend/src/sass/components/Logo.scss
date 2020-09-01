@@ -1,0 +1,24 @@
+@import "src/sass/_Variables";
+
+.logo-header {
+  width: 182px;
+  height: 56px;
+  display: grid;
+  justify-items: center;
+  padding: 10px 0px 10px 0px;
+  margin-top: 0;
+  margin-bottom: 0;
+  .logo-color {
+    fill: $Quartiary;
+    cursor: pointer;
+    transition: 1s;
+  }
+}
+
+.logo-header:hover {
+  .logo-color {
+    transition: 1s;
+    fill: $tertiary;
+  }
+}
+

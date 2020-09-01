@@ -1,0 +1,30 @@
+@import "src/sass/_Variables";
+
+.result-container {
+  height: 100vh;
+  margin: 0px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 96px 110px auto 150px 150px;
+  justify-items: center;
+
+  .result-content-container {
+    display: grid;
+    grid-template-rows: 50px auto;
+    justify-items: center;
+    align-items: center;
+    height: auto;
+    width: 90vw;
+
+    .title-results {
+      grid-row: 1/2;
+      color: $Quartiary;
+      font-size: 20px;
+  }
+
+    .all-results-container {
+      grid-row: 2/3;
+
+    }
+  }
+}

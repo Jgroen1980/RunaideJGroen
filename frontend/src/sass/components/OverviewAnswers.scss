@@ -1,0 +1,14 @@
+@import "src/sass/Variables";
+
+.overview-answers {
+  text-align: center;
+  padding-top: 20px;
+  color: $primary;
+
+
+  .overview-title {
+    color: $Quartiary;
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+}

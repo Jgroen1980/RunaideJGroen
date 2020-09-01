@@ -1,0 +1,20 @@
+@import "Variables";
+
+body {
+  //background: black;
+  background-image: url("../assets/image-background004 copy.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.logo-header {
+  display: flex;
+  align-self: center;
+  margin: 10px auto;
+}
+
+a {
+  cursor: pointer;
+}

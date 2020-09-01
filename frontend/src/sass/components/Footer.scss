@@ -1,0 +1,17 @@
+@import "src/sass/_Variables";
+
+.footer {
+  display: grid;
+  justify-self: stretch;
+  align-items: flex-end;
+  padding: 50px;
+  background: rgb(0,229,188);
+  background: linear-gradient(0deg, rgba(0,229,188,1) 5%, rgba(0,229,188,0) 100%);
+  .footer-link {
+    justify-self: center;
+    font-family: "Avenir Next";
+    color: $secondary;
+    font-size: 20px;
+    text-decoration: none;
+  }
+}

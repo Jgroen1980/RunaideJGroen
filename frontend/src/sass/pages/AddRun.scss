@@ -1,0 +1,131 @@
+@import "src/sass/_Variables";
+
+@keyframes fade-components {
+  from {opacity: 0;}
+  to {opacity: 1.0;}
+}
+
+.addrun-container {
+  height: 100vh;
+  margin: 0px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 96px 110px auto 53px 75px 150px;
+  justify-items: center;
+
+  //logo component have own style.
+
+  //Title component have own style.
+
+  // container with question components
+  .question-container {
+    display: grid;
+    font-size: 20px;
+    justify-items: center;
+    transition: width 2s;
+    width: 80vw;
+  }
+
+  // question components are not displayed.
+  .question-container > div {
+    display: none;
+    transition: width 2s;
+
+  }
+
+  // a specific question component is displayed.
+  .question-container > div.active {
+    display: grid;
+    opacity: 1;
+    animation-name: fade-components;
+    animation-duration: 2s;
+
+  }
+
+  // container with navigation trough the question components.
+  .navigation-container {
+    display: grid;
+    grid-template-columns: 1fr 100px 1fr;
+    align-items: center;
+    padding: 20px 0px;
+    height: 50px;
+    grid-column: 1/3;
+
+    .route-question-label {
+      display: grid;
+      grid-column: 2/3;
+      padding: 0 5px;
+      justify-self: center;
+    }
+
+    .previous-active{
+      display: grid;
+      grid-column: 1/2;
+      justify-self: end;
+      padding-right: 5px;
+    }
+
+    .next-active {
+      display: grid;
+      grid-column: 3/4;
+      padding: 0 5px;
+      justify-self: start;
+    }
+
+  }
+
+  .navigation-container > div {
+    display: none;
+  }
+
+  .navigation-container > div.active {
+    display: grid;
+  }
+
+  .backward-submit-button {
+    display: grid;
+    grid-column: 1/2;
+  }
+
+  .route-question-label {
+    display: grid;
+    grid-column: 2/3;
+    padding: 0 5px;
+    color: $primary;
+  }
+
+  .forward-submit-button {
+    display: grid;
+    grid-column: 3/4;
+  }
+
+  // container with the sumbit form to DB.
+  .submit-button {
+    display: grid;
+    grid-row: 4/6;
+    height: 100px;
+    width: 80vw;
+    justify-items: center;
+    padding-top: 10px;
+    margin-bottom: 10px;
+
+    .delete-run-id {
+      padding-top: 10px;
+
+      a {
+        color: $Quartiary;
+        text-decoration: none;
+
+      }
+    }
+  }
+
+  //footer container.
+  .footer-addrun {
+    display: grid;
+    grid-row: 6/7;
+    justify-self: stretch;
+    align-items: flex-end;
+  }
+}
+

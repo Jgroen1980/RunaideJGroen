@@ -1,0 +1,46 @@
+@import "src/sass/Variables";
+
+.question-container-one {
+
+  .question-one-container {
+    display: grid;
+    align-items: center;
+    grid-gap: 5px;
+    padding-top: 20px;
+
+    .question-title {
+      display: grid;
+      grid-column: 1/3;
+      align-items: start;
+      align-self: start;
+      line-height: 30px;
+      margin: 0;
+      padding-bottom: 30px;
+      color: $primary;
+      justify-items: center;
+    }
+
+    .question-label {
+      display: grid;
+      align-items: center;
+      grid-column: 1/2;
+      justify-items: end;
+      padding-right: 10px;
+      color: $primary;
+    }
+
+    .question-input {
+      display: grid;
+      grid-column: 2/3;
+      align-items: center;
+      align-self: center;
+      width: 50px;
+      border: none;
+      border-radius: 5px;
+      height: 30px;
+      font-size: 20px;
+    }
+  }
+}
+
+

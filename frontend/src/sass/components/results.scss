@@ -1,0 +1,89 @@
+@import "./src/sass/_Variables";
+
+.result-component-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  color: $primary;
+  padding: 50px 10px;
+  font-size: 20px;
+  border: 1px solid $Quartiary;
+  border-radius: 15px;
+  margin: 30px 0;
+
+  .icon-element {
+    display: grid;
+    grid-row: 1/2;
+    justify-self: center;
+    align-items: end;
+
+    img {
+      margin: 0 20px;
+      //background-color: red;
+    }
+
+    .moment-image-active {
+
+    }
+    .moment-image-disabled {
+      display: none;
+    }
+    .activity-image-active {
+
+    }
+    .activity-image-disabled {
+      display: none;
+    }
+  }
+
+  .result-title {
+    display: grid;
+    grid-row: 2/3;
+    justify-self: center;
+    font-weight: 600;
+    line-height: 130%;
+    text-align: center;
+
+  }
+
+  .result-selection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center ;
+    font-weight: 300;
+
+
+    .select-button {
+      margin: 0 10px;
+      background-color: transparent;
+      border-color: $tertiary;
+      border-radius: 8px;
+      font-family: $primary-font;
+      font-size: 20px;
+      color: $tertiary;
+      padding: 0 5px;
+    }
+    .value-result {
+      margin: 0 5px;
+      color: #00E5BC;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .result-component-container {
+
+    .result-title {
+
+      line-height: 30px;
+
+    }
+    .result-selection {
+      line-height: 40px;
+      .select-button {
+      }
+    }
+  }
+}

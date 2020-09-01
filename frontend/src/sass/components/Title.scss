@@ -1,0 +1,19 @@
+@import "src/sass/_Variables";
+
+
+.title {
+  display: grid;
+  text-align: center;
+  padding: 0px 0px 20px 0px;
+  align-items: center;
+  height: 60%;
+
+  .title-header {
+    margin: 0px;
+    color: $primary;
+    font-family: "Avenir Next";
+    font-size: 50px;
+    font-weight: 200;
+  }
+}
+

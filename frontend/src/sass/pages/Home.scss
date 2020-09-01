@@ -1,0 +1,22 @@
+@import "src/sass/_Variables";
+
+.home-container {
+  height: 100vh;
+  margin: 0px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 96px 110px 40px auto 150px;
+  justify-items: center;
+
+  .buttons-container {
+    display: grid;
+    align-content: end;
+    grid-gap: 30px;
+  }
+}
+
+@media screen and (min-height: 700px) {
+  .buttons-container {
+    padding-bottom: 6em;
+  }
+}

@@ -1,0 +1,41 @@
+@import "src/sass/_Variables";
+
+.text-link-big {
+  background-color: rgba(0,0,0,0.1);
+  border: 1px solid $tertiary;
+  color: $tertiary;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 40px;
+  margin: 10px 5px;
+  cursor: pointer;
+  font-family: "Avenir Next";
+  font-weight: 200;
+  border-radius: 30px;
+  width: 210px;
+  height:55px;
+  display: grid;
+  //align-items: center;
+  align-content: center;
+  //grid-template-columns: 1fr;
+  //justify-items: center;
+  -webkit-transition: background-color 1s;
+}
+
+.text-link-big:hover {
+  background-color: $Quartiary;
+  transition: 1s;
+  color: $secondary;
+  font-weight: 400;
+  border: 1px solid $secondary;
+}
+
+@media screen and (max-width: 500px) {
+  .text-link-big{
+    font-size: 35px;
+    width: 170px;
+    height: 40px;
+    border-radius: 20px;
+  }
+}

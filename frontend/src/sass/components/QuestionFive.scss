@@ -1,0 +1,70 @@
+@import "src/sass/Variables";
+
+.question-container-five {
+
+  .question-five-container {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 5px;
+    padding-top: 20px;
+
+    .question-title {
+      display: grid;
+      grid-column: 1/3;
+      align-items: start;
+      align-self: start;
+      line-height: 30px;
+      margin: 0;
+      padding-bottom: 30px;
+      color: $primary;
+
+    }
+
+    input[type=radio]:not(old){
+      opacity: 0;
+      position: fixed;
+      width: 0;
+    }
+
+    label {
+      display: grid;
+      grid-column: 1/3;
+      align-items: center;
+      justify-items: center;
+      background-color: rgba(225,225,225,0.2);
+      padding: 10px 20px;
+      font-family: $primary-font;
+      font-size: 16px;
+      color: $Quartiary;
+      border: none;
+      border-radius: 8px;
+      width: 150px;
+    }
+
+    input[type=radio]:checked + label {
+      background-color: $tertiary;
+      border-color: green;
+      transition: 1s;
+      color: $secondary;
+    }
+
+    input[type=radio]:hover + label {
+      background-color: $Quartiary;
+      transition: 0.8s;
+      color: $secondary;
+    }
+
+    .question-input {
+      display: grid;
+      grid-column: 2/3;
+      align-items: center;
+      align-self: center;
+      width: 50px;
+      border: none;
+      border-radius: 5px;
+      height: 30px;
+      font-size: 20px;
+    }
+  }
+}
